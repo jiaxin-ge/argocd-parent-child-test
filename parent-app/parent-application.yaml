@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: file:///tmp/argocd-test/child-app
-    path: .
+    repoURL: file:///private/tmp/argocd-test
+    path: child-app
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
