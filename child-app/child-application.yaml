@@ -4,7 +4,7 @@ metadata:
   name: child-app
   namespace: argocd
   labels:
-    app.kubernetes.io/instance: parent-app
+    app.kubernetes.io/instance: wrong-parent
 spec:
   project: default
   source:
