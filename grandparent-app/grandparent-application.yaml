@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: grandparent-app
-  namespace: argocd
+  namespace: test-namespace
 spec:
   project: default
   source:
@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: test-namespace
   syncPolicy:
     automated:
       prune: true

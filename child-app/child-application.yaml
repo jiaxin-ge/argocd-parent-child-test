@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: child-app
-  namespace: argocd
+  namespace: test-namespace
   labels:
     app.kubernetes.io/instance: wrong-parent
 spec:
