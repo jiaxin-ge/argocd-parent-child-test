@@ -1,15 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: parent-app
+  name: grandparent-app
   namespace: argocd
-  labels:
-    app.kubernetes.io/instance: grandparent-app
 spec:
   project: default
   source:
     repoURL: https://github.com/jiaxin-ge/argocd-parent-child-test
-    path: child-app
+    path: parent-app
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
