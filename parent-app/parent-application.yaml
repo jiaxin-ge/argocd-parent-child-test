@@ -4,7 +4,7 @@ metadata:
   name: parent-app
   namespace: test-namespace
   labels:
-    app.kubernetes.io/instance: grandparent-app
+    app.kubernetes.io/instance: wrong-grandparent
 spec:
   project: default
   source:
